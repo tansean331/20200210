@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>动画一</title>
+		<style type="text/css">
+			/* @keyframes d{ */
+				/* from{background-color: #00CC00;}
+				to{background-color: blue} */
+				/* 0%   {background:red; left:0px; top:0px;} */
+/* 				1%  {background:yellow; left:0px; top:0px;transform: rotate(30deg);}
+				10%  {background:yellow; left:0px; top:0px;transform: rotate(15deg);}
+				50%  {background:yellow; left:500px; top:0px;transform: rotate(0deg);}
+				100% {background:red; left:0px; top:0px;
+				transform: rotate(-360deg);}  
+			} */
+			@keyframes getBattery{
+				0% {background-color: #0000FF;}
+				25% {background-color: #008000; width: 25%;}
+				50% {background-color: #008000; width: 50%;}
+				75% {background-color: #008000; width: 75%;}
+				100% {background-color: #008000; width: 100%;}
+			}
+			div{
+				position: relative;
+				animation: d 5s;
+				width: 90px;
+				height: 70px;
+				background-color: #00FFFF;
+				border-radius: 10px;
+			}
+			p{
+				font-size: 25px;
+				color: white;
+				font-weight: 600;
+			}
+			#battery{
+				width: 200px;
+				height: 50px;
+				border: 1px solid saddlebrown;
+			}
+			#core{
+				width: 30px;
+				height: 50px;
+				animation: getBattery 5s;
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>css3</p>
+		</div>
+		<div id="battery">
+			<div id="core"></div>
+		</div>
+	</body>
+</html>

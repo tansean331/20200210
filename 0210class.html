@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>红包</title>
+		<style>
+			#redbag{
+				width: 200px;
+				height: 300px;
+				background-color: red;
+				/* div 用flex */
+				display: flex;   
+				justify-content:center;
+				margin: 0 auto;
+				border-radius: 10px;
+			}
+			#top{
+				width: 200px;
+				height: 150px;
+				background-color: red;
+				border-radius: 10px 10px 80px 80px;
+				position: absolute;
+				z-index: 2;
+			}
+			#topshadow{
+				width: 200px;
+				height: 150px;
+				background-color: rgba(0,0,0,0.3); 
+				margin-top: 10px;
+				border-radius: 10px 10px 80px 80px;
+				position: absolute;
+			}
+			#cir{
+				width: 50px;
+				height: 50px; 
+				background-color: yellow;
+				margin-top: 125px;
+				border-radius: 25px;
+				position: absolute;
+				display: flex;
+				justify-content:center;
+				z-index: 3;
+			}
+			#qian{
+				font-size: 30px;
+				margin-top: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="redbag">
+			<div id="top"></div>
+			<div id="topshadow"></div>
+			<div id="cir">
+				<span id="qian">￥</span>
+			</div>
+		</div>
+	</body>
+</html>
