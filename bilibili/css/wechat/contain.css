@@ -1,0 +1,44 @@
+.label1{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    line-height: 20px;
+    color: #FFF;
+    background: #000;
+    cursor: pointer;
+}/*用于调整单选框的属性以及位置*/
+.label2{
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    line-height: 20px;
+    color: #FFF;
+    background: #000;
+    cursor: pointer;
+}/*用于调整单选框的属性以及位置*/
+.label3{
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    line-height: 20px;
+    color: #FFF;
+    background: #000;
+    cursor: pointer;
+}/*用于调整单选框的属性以及位置*/
+.contain ul{transition:all 0.5s;}
+
+#Input1:checked~ul{ margin-left: 0;}/*第一张点击切换*/
+#Input1:checked~.label1{ background: #535353;}/*点击后改变单选框颜色*/
+#Input2:checked~ul{ margin-left: -600px;}/*第二张点击切换*/
+#Input2:checked~.label2{ background: #535353;}/*点击后改变单选框颜色*/
+#Input3:checked~ul{ margin-left: -1200px;}/*第三张点击切换*/
+#Input3:checked~.label3{ background: #535353;}/*点击后改变单选框颜色*/

@@ -1,0 +1,43 @@
+#content{
+	flex: 1;
+	background-color: white;
+	overflow: scroll;
+}
+.content-mid{
+	display: flex;
+	flex-direction: row;
+	/*多行是否换行*/
+	flex-wrap: wrap;
+	/*单行水平对齐方式*/
+	justify-content: space-between;
+	/*单行垂直对齐方式*/
+	/* align-items: center; */
+	align-content: flex-start;
+	margin: 15px;
+}
+#content .contents{
+	width: 165px;
+	height: 160px;
+	border-radius: 5px;
+}
+
+#content .contents .contentsTop img{
+	width: 100%;
+	border-radius: 5px;
+}
+#content .contents .contentsMid span{
+	font-size: 12px;
+}
+#content .contents .contentsBottom{
+	font-size: 10px;
+	color: #707070;
+}
+
+
+#content-top{
+	flex: 1;
+	height: 180px;
+	margin: 15px;
+	display: flex;
+	justify-content: center;
+}

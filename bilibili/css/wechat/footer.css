@@ -1,0 +1,37 @@
+#footer
+{
+	width: 100%;
+	height: 45px;
+	display: flex;
+}
+#footer div
+{
+	flex: 0.25;
+	height: 45px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#footer div img{
+	width: 25px;
+	height: 25px;
+	display: block;
+}
+#footer .menus-home span{
+	font-size: 12px;
+	color: #ff6e9c;
+}
+#footer .menus-pingdao span{
+	font-size: 12px;
+	color: #707070;
+}
+#footer .menus-dongtai span{
+	font-size: 12px;
+	color: #707070;
+}
+#footer .menus-shop span{
+	font-size: 12px;
+	color: #707070;
+}
